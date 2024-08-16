@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  color: white;
+  background-color: black;
+}
+
+
+/* -------------------------------------------------- */
+                        /* Header section */
+/* --------------------------------------------------*/ 
+header {
+  max-height: 100lvh;
+  background: linear-gradient(to bottom, black, #161616, #1b1b1b, #161616, black);
+}
+header section div {
+  width: 40%;
+  margin: 0 auto;
+}
+nav {
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+nav > h1 {
+  font-size: 2.2em;
+  font-style: italic;
+  color: crimson;
+}
+nav > div {
+  padding: 2px 0;
+  display: flex;
+  border: 1px solid white;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50px;
+}
+nav > div > p {
+  padding: 6px 15px;
+  margin: 0 3px;
+  border-radius: 50px;
+  font-size: 1.08rem;
+  font-weight: 500;
+  background: transparent;
+}
+nav > div > p:nth-child(1) {
+  background: crimson;
+}
+nav > svg {
+  display: none;
+}
+@media (max-width: 572px) {
+  header {
+    max-height: max-content;
+  }
+  nav {
+    padding: 0 20px;
+  }
+  nav > div {
+    display: none;
+  }
+  nav > svg {
+    display: block;
+  }
+  header section div {
+    width: 95%;
+  }
+}
+#header-description {
+  margin: 0 auto;
+}
+#header-description h1 {
+  font-size: 3.8rem;
+  font-weight: bolder;
+}
+#header-description h1 span {
+  font-family: 'Grey Qo';
+  font-size: 3.5rem;
+}
+header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  header section {
+    flex-direction: column;
+  }
+}
+.header-details {
+  margin: 40px auto;
+  line-height: 2rem;
+  font-size: 1.03em;
+}
+#header-buttons {
+  display: flex;
+  width: 100%;
+}
+.btn-primary {
+  padding: 12px 35px;
+  font-size: medium;
+  font-weight: 500;
+  background: #E6533C;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+}
+.app-btn {
+  margin-left: 12px;
+  background: transparent;
+  border: 1px solid white;
+}
+.dim-text {
+  opacity: 0.6;
+}
+#header-img {
+  margin: 0 auto;
+  position: relative;
+}
+#header-img > img {
+  height: 100%;
+}
+
+
+/* -------------------------------------------------- */
+              /* Change your habits section */
+/* --------------------------------------------------*/ 
+#change-your-habits {
+  padding: 50px;
+  text-align: center;
+}
+.spaced-p {
+  margin: 15px auto;
+}
+.common-heading {
+  font-size: 2.5rem;
+}
+#habits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#habits > div {
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  #habits {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#habits > div > img {
+  margin: 30px auto;
+  border-radius: 50%;
+}
+#habits > div > p {
+  margin: 10px auto;
+}
+
+
+/* -------------------------------------------------- */
+               /* Run Extra Mile section */
+/* --------------------------------------------------*/
+#extra-mile {
+  width: 85%;
+  margin: 30px auto;
+  padding: 20px;
+  padding-left: 50px;
+  background: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+#extra-mile > div {
+  width: 40%;
+}
+#extra-mile > div > img {
+  width: 100%;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 576px) {
+  #extra-mile {
+    padding-left: 25px;
+    flex-direction: column;
+  }
+  #extra-mile > div {
+    width: 95%;
+    margin: 20px auto;
+  }
+}
+
+
+/* -------------------------------------------------- */
+               /* Meet Our Team section */
+/* --------------------------------------------------*/
+#meet-our-team {
+  margin: 60px auto;
+}
+#members {
+  background: #272727;
+  border-radius: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#members img {
+  height: 250px;
+  width: 350px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+#members > div {
+  margin: 0 auto;
+  position: relative;
+}
+#members > div > div {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+@media only screen and (max-width: 576px) {
+  #members {
+    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #members img {
+    margin: 10px 0;
+  }
+}
+
+
+footer {
+  padding: 0 60px;
+  background: #272727;
+}
+footer > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+footer h1 {
+  font-size: 80px;
+  margin: 20px auto;
+  color: crimson;
+  font-style: italic;
+}
+footer h2 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+footer p {
+  font-size: larger;
+  margin-top: 6px;
+}
+footer hr {
+  margin-top: 20px;
+}
+@media (max-width: 576px) {
+  footer > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
